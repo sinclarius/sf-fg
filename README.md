@@ -1,7 +1,7 @@
 # sf-fg
 A quick coffee-break figure-ground study of Santa Fe, NM built with MapboxGL JS for their #weekendmaphack.
 
-![https://raw.githubusercontent.com/sinclarius/sf-fg/master/sffg-web.gif]
+![](https://raw.githubusercontent.com/sinclarius/sf-fg/master/sffg-web.gif)
 
 ## [Live demo](http://sinclarius.com/sf/).
 
