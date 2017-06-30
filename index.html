@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>golly gee do i love maps!</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
+    <style type="text/css">
+        body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        body * {
+           -webkit-touch-callout: none;
+             -webkit-user-select: none;
+                -moz-user-select: none;
+                 -ms-user-select: none;
+                     user-select: none;
+        }
+        .map {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%;
+        }
+        .compare-swiper {
+            background-color: #262626 !important;
+        }
+    </style>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.js'></script>
+    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-compare/v0.1.0/mapbox-gl-compare.css' type='text/css' />
+</head>
+<body>
+<div id='before' class='map'></div>
+<div id='after' class='map'></div>
+<script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2luY2xhcml1cyIsImEiOiJjaXBvZjdxOXQwMXFvZnVtM3A4YmFrejN2In0.ze62-HAgTD4AOTZPmRJh_Q';
+
+    var beforeMap = new mapboxgl.Map({
+    container: 'before',
+        style: 'mapbox://styles/sinclarius/cj239ctq000392rqctmchv3ki'
+    });
+
+    var afterMap = new mapboxgl.Map({
+    container: 'after',
+    style: 'mapbox://styles/mapbox/light-v9',
+    });
+
+    var map = new mapboxgl.Compare(beforeMap, afterMap, {
+    // Set this to enable comparing two maps by mouse movement:
+    // mousemove: true
+    });
+
+</script>
+</body>
+</html>
