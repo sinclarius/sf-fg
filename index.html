@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" charset="UTF-8" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>golly gee do i love maps!</title>
     <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
@@ -40,7 +40,8 @@
 
     var beforeMap = new mapboxgl.Map({
     container: 'before',
-        style: 'mapbox://styles/sinclarius/cj239ctq000392rqctmchv3ki'
+        style: 'mapbox://styles/sinclarius/cj239ctq000392rqctmchv3ki',
+        minZoom: 15.1
     });
 
     var afterMap = new mapboxgl.Map({
